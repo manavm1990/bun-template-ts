@@ -4,6 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "oxlint src --type-aware",
     "prepare": "husky",
     "test": "bun test"
@@ -13,10 +15,14 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "oxlint": "^1.41.0",
-    "oxlint-tsgolint": "^0.11.1"
+    "oxlint-tsgolint": "^0.11.1",
+    "prettier": "3.8.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "bun run lint"
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "bun run lint"
+    ]
   },
   "peerDependencies": {
     "typescript": "^5"

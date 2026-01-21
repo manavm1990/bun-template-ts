@@ -3,7 +3,7 @@
     "correctness": "warn",
     "suspicious": "warn",
     "pedantic": "warn",
-    "style": "warn",
+    "style": "off",
     "restriction": "warn"
   },
   "rules": {
