@@ -1,0 +1,24 @@
+{
+  "name": "bun-template-ts",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "oxlint src",
+    "lint:fix": "oxlint src --fix",
+    "prepare": "husky",
+    "test": "bun test"
+  },
+  "devDependencies": {  
+    "@types/bun": "latest",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "oxlint": "^1.41.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "bun run lint"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

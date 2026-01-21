@@ -1,0 +1,17 @@
+{
+  "categories": {
+    "correctness": "warn",
+    "suspicious": "warn",
+    "pedantic": "warn",
+    "style": "warn",
+    "restriction": "warn"
+  },
+  "rules": {
+    "no-console": [
+      "warn",
+      {
+        "allow": ["info", "warn", "error"]
+      }
+    ]
+  }
+}

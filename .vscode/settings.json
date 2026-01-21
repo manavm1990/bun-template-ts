@@ -1,0 +1,25 @@
+{
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingComments": "always",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+      "addMissingImports": "explicit",
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "eslint.rules.customizations": [
+      {
+        "rule": "*",
+        "severity": "warn"
+      }
+    ],
+    "files.autoSave": "onFocusChange",
+    "typescript.inlayHints.parameterNames.enabled": "none",
+    "typescript.inlayHints.variableTypes.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.validate.enable": true,
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
