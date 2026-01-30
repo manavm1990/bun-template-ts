@@ -23,7 +23,8 @@
         
     "exactOptionalPropertyTypes": true,
     "useUnknownInCatchVariables": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "build", "coverage"]
